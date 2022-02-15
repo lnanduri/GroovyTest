@@ -42,10 +42,5 @@ pipeline {
                 }
             }
         }
-    }   
-     post { 
-            always { 
-                emailext body: 'Jenkins job details', recipientProviders: [developers()], subject: 'TEST', to: 'nandurilaxman1@gmail.com'
-            }
-        }
+    }
 }
