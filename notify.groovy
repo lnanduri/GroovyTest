@@ -4,8 +4,8 @@ def notifyStarted() {
 
   // send to HipChat
   //hipchatSend (color: 'YELLOW', notify: true,
-      message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
-    )
+  //    message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
+    //)
 
   // send to email
   emailext (
