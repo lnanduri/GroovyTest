@@ -40,10 +40,10 @@ pipeline {
                 }
             }
         }
-        post { 
+    }   
+     post { 
             always { 
                 emailext body: 'Jenkins job details', recipientProviders: [developers()], subject: 'TEST', to: 'nandurilaxman3@gmail.com'
             }
         }
-    }   
 }
