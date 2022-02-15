@@ -1,4 +1,5 @@
 def gv
+def nv
 
 pipeline {
     agent any
@@ -11,6 +12,7 @@ pipeline {
             steps {
                 script {
                    gv = load "script.groovy" 
+                   nv = load "notify.groovy"
                 }
             }
         }
